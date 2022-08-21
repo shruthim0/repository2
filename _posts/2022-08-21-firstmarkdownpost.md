@@ -13,6 +13,7 @@ title: first markdown post !!
 2. **bold text**
 3. `code font!!`
 4. create [links](https://www.pinterest.com.au/)
-5. make bulleted lists:
+5. ~~strikethrough text~~
+6. make bulleted lists:
 - item 1
 - item 2
