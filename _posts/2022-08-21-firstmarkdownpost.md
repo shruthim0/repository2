@@ -8,15 +8,11 @@ title: first markdown post !!
 
 # First Level of Heading
 ## Second Level of Heading !!
-### paragraph text.
+### paragraph text
 1. *italics* 
 2. **bold text**
 3. `code font!!`
 4. create [links](https://www.pinterest.com.au/)
-5. add tables !!
-
-| Fruits | Vegis |
-|-|-|
-| apples | carrots |
-| grapes | lettuce |\
-6. > indents 
+5. make bulleted lists:
+- item 1
+- item 2
