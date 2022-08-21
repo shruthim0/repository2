@@ -13,3 +13,10 @@ title: first markdown post !!
 2. **bold text**
 3. `code font!!`
 4. create [links](https://www.pinterest.com.au/)
+5. add tables !!
+
+| Fruits | Vegis |
+|-|-|
+| apples | carrots |
+| grapes | lettuce |\
+6. > indents 
