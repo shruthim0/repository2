@@ -8,7 +8,12 @@ title: first markdown post !!
 
 # First Level of Heading
 ## Second Level of Heading !!
-### paragraph text
+### Third Level of Heading
+#### and even more 
+
+---
+
+## Basic Stuff
 1. *italics* 
 2. **bold text**
 3. `code font!!`
@@ -17,3 +22,8 @@ title: first markdown post !!
 6. make bulleted lists:
 - item 1
 - item 2
+
+---
+
+## Goals
+#### I hope to improve my programming and problem solving skills :)
