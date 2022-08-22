@@ -3,7 +3,7 @@ toc: false
 layout: post
 description: testing out markdown
 categories: [markdown]
-title: first markdown post !!
+title: First Markdown Post !!
 ---
 
 # First Level of Heading
