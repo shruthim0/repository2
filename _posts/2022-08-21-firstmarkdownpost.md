@@ -22,7 +22,8 @@ title: First Markdown Post !
 5. ~~strikethrough text~~
 6. make bulleted lists:
 - item 1
-- item 2
+- item 1a
+- item 1b
 
 ---
 
