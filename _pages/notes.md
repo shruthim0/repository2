@@ -25,8 +25,7 @@ permalink: /notes/
     - def = used to define a function
     - import = imports a function
 - Markdown
-    - *![]({{ site.baseurl }}/locationofimage/imagename.png "hovername")* = embed image
-
+    - embed an image: exclamationmark[]({{ site.baseurl }}/images/coverpic.png "my logo")
 ### Week 2
 - 
 - 
