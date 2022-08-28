@@ -2,7 +2,7 @@
 toc: true
 layout: page
 description: My notes and progress
-title: Notes on CSP Vocab and Concepts
+title: Notes
 permalink: /notes/
 ---
 
