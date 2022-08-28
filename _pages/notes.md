@@ -25,8 +25,7 @@ permalink: /notes/
     - def = used to define a function
     - import = imports a function
 - Markdown
-    - embed an image: ![](,{{site.baseur}},/location of image,/nameofimage.png, "my logo")
-        - (don't include commas)
+    - embed an image: use site.baseur 
 
 ### Week 2
 - 
