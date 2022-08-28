@@ -74,8 +74,8 @@
 
   
       ,"page3": {
-          "title": "Notes",
-          "content": "Notes on Vocabulary and Concepts . Week 0 . Downloading and Setting up Tools | PowerShell cd = change directory | cd ~ = change directory to home | ls = list files | code . = opens up VSCode | . | . Week 1 . Python print (“text”) = will print what is in the quotes | def = used to define a function | import = imports a function | . | . Week 2 . | | | .",
+          "title": "Notes on CSP Vocab and Concepts",
+          "content": "Week 0 . Downloading and Setting up Tools | PowerShell cd = change directory | cd ~ = change directory to home | ls = list files | code . = opens up VSCode | . | Markdown #,##,##-size of font | italics | bold | strikethrough | . | . Week 1 . Python print (“text”) = will print what is in the quotes | def = used to define a function | import = imports a function | . | Markdown = embed image | . | . Week 2 . | | | .",
           "url": "https://shruthim0.github.io/repository2/notes/",
           "relUrl": "/notes/",
           "date": ""
