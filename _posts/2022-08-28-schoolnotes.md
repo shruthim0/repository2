@@ -6,10 +6,6 @@ categories: [markdown]
 title: Class Notes and Resources
 ---
 
-# Class Notes and Resources
-
----
-
 ### Weeks: 08/22-08/29
 
 1. AP Chemistry
