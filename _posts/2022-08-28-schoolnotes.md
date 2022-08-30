@@ -4,6 +4,8 @@ layout: post
 description: class notes/resources 
 categories: [markdown]
 title: Class Notes and Resources
+comments: true
+image: images/coverpic.png
 ---
 
 ### Weeks: 08/22-08/29
@@ -16,16 +18,18 @@ title: Class Notes and Resources
         - take notes on stoichiometry methods
 
 2. AP Calculus BC
-    - Learned: Review of Limits (limits to infinity, absolute value limits, squeeze theorem, essential trig limits), started Derivative Unit (limit definition,...) 
+    - Learned: Review of Limits (limits to infinity, absolute value limits, squeeze theorem,    essential trig limits), started Derivative Unit (limit definition,...) 
     - Things to get done
         - Finish Unit 1 Closure
         - Finish Friday HW
         - Study for Test 1 (09/1)
+        - Finish (08/29) cw/hw 
 
 3. AP English Language
     - Learned: how to write a precis, different rhetorical strategies, 2 different thesis formats, proper introduction paragraph format.
     - Things to get done
        - Study rhetorical strategies to prepare for on-demand (08/31)
+       - proof-read notesbook for check (08/31) 
 
 4. AP Computer Science Principles
     - Things to get done
