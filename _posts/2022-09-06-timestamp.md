@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: 
-categories: [markdown]
+categories: [school]
 title: Time Stamp
 ---
 

@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: class notes/resources 
-categories: [markdown]
+categories: [school]
 title: Class Notes and Resources
 comments: true
 image: images/coverpic.png
