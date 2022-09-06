@@ -1,3 +1,13 @@
+---
+toc: true
+layout: post
+description: using html table fragments
+categories: [markdown]
+title: My Daily Schedule
+---
+
+
+
 # My Daily Schedule
 
 |                                    |   | Monday                    | Tuesday       | Wednesday     | Thursday      | Friday         | Saturday      | Sunday |
