@@ -113,7 +113,7 @@
     
         ,"post10": {
             "title": "Brainstorming Ideas for APCSP Preformance Task",
-            "content": "Things I can do: . InfoDb = [] # defining an empty list InfoDb.append({ # to append values to list print(InfoDb) # will print the data structure # While loop contains an initial n and an index incrementing statement (n += 1) def while_loop(): print(&quot;While loop output n&quot;) i = 0 while i &lt; len(InfoDb): record = Quiz[i] print (record) i += 1 return while_loop() .",
+            "content": "App Ideas . journal app with prompts random prompts will be given | use has set amount per prompt | user also has option to free write | inputs are stored and can be accessed by user | . | writing practice app random prompts will be given to user | user has a set amount of time to write about given prompt | user&#39;s input is stored and can be accessed by user | . | drawing app | planner app | calculator app | . Things I can do: . InfoDb = [] # defining an empty list InfoDb.append({ # to append values to list print(InfoDb) # will print the data structure # While loop contains an initial n and an index incrementing statement (n += 1) def while_loop(): print(&quot;While loop output n&quot;) i = 0 while i &lt; len(InfoDb): record = Quiz[i] print (record) i += 1 return while_loop() .",
             "url": "https://shruthim0.github.io/repository2/2022/02/11/preformancestaskbrainstorm.html",
             "relUrl": "/2022/02/11/preformancestaskbrainstorm.html",
             "date": " • Feb 11, 2022"
