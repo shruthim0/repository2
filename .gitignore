@@ -1,3 +1,6 @@
+# Ignore from local build
+settings.ini
+Gemfile.lock
 *.swp
 ~*
 *~
