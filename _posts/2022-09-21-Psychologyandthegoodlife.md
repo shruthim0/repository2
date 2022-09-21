@@ -9,14 +9,14 @@ title: Psychology and the Good Life notes
 # Psychology and the Good Life notes
 
 ## Vocabulary
-Time Affluence- the sense that you has a enough time available on a daily basis
-Time Famine- the feeling you do not have time and that there is always room for more important things
+- Time Affluence- the sense that you have enough time available on a daily basis.
+- Time Famine- the feeling you do not have enough time.
 
 ## Big Ideas
 - Yale Students feel that....
 1. Stress makes them feel like their college experience isn't complete.
-2. TLots of anxiety and stress. 
-3. To stressed to enjoy their life.
+2. They are always anxious and stressed. 
+3. Too stressed to enjoy their life.
 4. Too busy to  utilize the opportunities they have available at Yale.
 5. Students don't communicate their needs or struggles. 
 
@@ -35,4 +35,5 @@ Time Famine- the feeling you do not have time and that there is always room for 
 ## Grateful List
 1. my friends and family for supporting me
 2. my hobbies: reading, painting, running
-3. the provileges I have being born in the US
+3. the resouces I have being born in the US
+4. being able to recieve an education
