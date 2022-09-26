@@ -1,8 +1,9 @@
 # Ignore from local build
 settings.ini
 Gemfile.lock
-notebookwithjavascriptusage.md
-notebookwithjavascriptusage
+_posts/2022-09-25-notebookwithhtmltable.md
+_posts/2022-09-25-notebookwithjavascript.md
+_posts/2022-09-25-notebookwithjavascriptusage.md
 *.swp
 ~*
 *~
