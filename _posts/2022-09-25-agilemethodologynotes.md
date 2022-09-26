@@ -51,3 +51,5 @@ title: Agile Methodology
     - Glad to learn
     - Failing and always willing to try new things
     - Willing to open new doors in case of a drastic oversight
+
+![agile methodology diagram]({{ site.baseurl }}/images/Agile Methodology Diagram.png)
