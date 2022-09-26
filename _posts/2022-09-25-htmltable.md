@@ -79,5 +79,10 @@ title: Making a Table with HTML
 </tbody>
 </table>
 
+![image]({{ site.baseurl }}/images/htmlss1.png)
 
-![ss of html code](htmlss1.png)
+![image]({{ site.baseurl }}/images/htmlss2.png)
+
+![image]({{ site.baseurl }}/images/htmlss3.png)
+
+![ss1](/home/shruthim/vscode/repository2/images/htmlss1.png)
