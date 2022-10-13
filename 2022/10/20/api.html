@@ -235,23 +235,19 @@ tests_per_1m_population 2,990,303
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">json</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://spotify23.p.rapidapi.com/tracks/&quot;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://spotify23.p.rapidapi.com/search/&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;q&quot;</span><span class="p">:</span><span class="s2">&quot;Harry Styles&quot;</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;artists&quot;</span><span class="p">,</span><span class="s2">&quot;offset&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span><span class="s2">&quot;limit&quot;</span><span class="p">:</span><span class="s2">&quot;10&quot;</span><span class="p">,</span><span class="s2">&quot;numberOfTopResults&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span><span class="p">}</span>
 
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;ec628c3848mshc2f96fd1e664c35p194b32jsna5ebcbef62b6&quot;</span><span class="p">,</span>
 	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;spotify23.p.rapidapi.com&quot;</span>
-
 <span class="p">}</span>
-
-<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;q&quot;</span><span class="p">:</span><span class="s2">&quot;&lt;REQUIRED&gt;&quot;</span><span class="p">,</span><span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;multi&quot;</span><span class="p">,</span><span class="s2">&quot;offset&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span><span class="s2">&quot;limit&quot;</span><span class="p">:</span><span class="s2">&quot;10&quot;</span><span class="p">,</span><span class="s2">&quot;numberOfTopResults&quot;</span><span class="p">:</span><span class="s2">&quot;5&quot;</span><span class="p">}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
 
-<span class="n">musicJson</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Song: &quot;</span><span class="p">,</span> <span class="n">musicJson</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;albumns&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -264,7 +260,51 @@ tests_per_1m_population 2,990,303
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Song:  None
+<pre>{&#34;query&#34;:&#34;Harry+Styles&#34;,&#34;artists&#34;:{&#34;totalCount&#34;:51,&#34;items&#34;:[{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:6KImCVD70vtIoJWnq6nGn3&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Harry Styles&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000e5ebf7db7c8ede90a019c54590bb&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000f178f7db7c8ede90a019c54590bb&#34;,&#34;width&#34;:160,&#34;height&#34;:160}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:6wVLKQ3w2gCn11a0NQAkX0&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Harry Younger Styles&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:null}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:4AK6F7OLvEQ5QYCBNiQWHq&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;One Direction&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/289c7f686f5b78ceeb224453cf9a15697a678a79&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/6c89c662ad0ab75bc2af9a3ae2b16f811daced50&#34;,&#34;width&#34;:64,&#34;height&#34;:64}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:6rq7VcWeCTjiBIIuGt0D96&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Harry Stone&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000e5ebb6f491a3465a8408d9062cf0&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000f178b6f491a3465a8408d9062cf0&#34;,&#34;width&#34;:160,&#34;height&#34;:160}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:7mOjyS2iRyUA5jGuoUzEhv&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;styles benin harry&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab67616d0000b27398a414cadc31f38fb767f147&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab67616d0000485198a414cadc31f38fb767f147&#34;,&#34;width&#34;:64,&#34;height&#34;:64}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:2IrrH2ytG96HCP9dnM6mGr&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Twan Ray&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000e5eb76414483e902603927037c8d&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000f17876414483e902603927037c8d&#34;,&#34;width&#34;:160,&#34;height&#34;:160}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:2tCELGtX6ikbBFQomLSCRp&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Harry Stockwell&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:null}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:6CbmeywK3diNOrfk5yxr2d&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;STYLES HARRY EDWARD&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab67616d0000b27306b1f9b270b94fb192cfb449&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab67616d0000485106b1f9b270b94fb192cfb449&#34;,&#34;width&#34;:64,&#34;height&#34;:64}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:72fQWyXObQBgUIUejMo6js&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Molotov Cocktail Piano&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000e5eb5a9d38bfc76db9ba482d635f&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000f1785a9d38bfc76db9ba482d635f&#34;,&#34;width&#34;:160,&#34;height&#34;:160}]}}}},{&#34;data&#34;:{&#34;uri&#34;:&#34;spotify:artist:1KDOjuXZPd8XA3YBakakMb&#34;,&#34;profile&#34;:{&#34;name&#34;:&#34;Harry Shotta&#34;},&#34;visuals&#34;:{&#34;avatarImage&#34;:{&#34;sources&#34;:[{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000e5eb1eaf3ed16e9ac9e629844890&#34;,&#34;width&#34;:640,&#34;height&#34;:640},{&#34;url&#34;:&#34;https:\/\/i.scdn.co\/image\/ab6761610000f1781eaf3ed16e9ac9e629844890&#34;,&#34;width&#34;:160,&#34;height&#34;:160}]}}}}],&#34;pagingInfo&#34;:{&#34;nextOffset&#34;:10,&#34;limit&#34;:10}}}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://spotify23.p.rapidapi.com/albums/&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ids&quot;</span><span class="p">:</span><span class="s2">&quot;Harry&#39;s House&quot;</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;ec628c3848mshc2f96fd1e664c35p194b32jsna5ebcbef62b6&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;spotify23.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#34;error&#34;:{&#34;status&#34;:400,&#34;message&#34;:&#34;invalid id&#34;}}
 </pre>
 </div>
 </div>
