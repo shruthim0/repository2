@@ -8,6 +8,8 @@ title: Tri 1 Final Exam Review
 
 Incorrect Questions + explanation
 
+Overall Thoughts + Comments: In general I need to pay more attention while reading the question and identifying what the problem is asking me to find. For most of these questions, I solved for the wrong output/variable/etc. because I skimmed over the question instructions. Overall pay more attension while reading the question and make sure you're actually answering the question.
+
 2.
 - my answer: It displays true if x is negative and displays false otherwise.
 - correct answer: It displays true if x is negative and displays nothing otherwise.
