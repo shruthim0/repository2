@@ -3,7 +3,14 @@ settings.ini
 Gemfile.lock
 _posts/2022-09-25-notebookwithhtmltable.md
 _posts/2022-09-25-notebookwithjavascript.md
+_posts/2022-09-25-notebookwithjavascriptusage.mm
 _posts/2022-09-25-notebookwithjavascriptusage.md
+_posts/2022-09-25-notebookwithjavascript.md
+_posts/2022-09-11-preformancestaskbrainstorm.md
+_posts/2022-09-02-lists_dictionaries_iterations.md
+_posts/2022-08-29-TP120-pythonlists.md
+_posts/2022-08-24-pythonquiz.md
+_posts/2022-08-21-firstjupyternotebook.md
 *.swp
 ~*
 *~
@@ -18,3 +25,4 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
+
