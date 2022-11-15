@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -159,12 +159,50 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Question: Name the Python output command mentioned in this lesson?
-Answer: print()
-Question: If you see many lines of code in order, what would College Board call it?
-Answer: a sequence of code
-Question: Describe a keyword used in Python to define a function?
-Answer: def
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 6&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span>     msg = input()                  # the user&#39;s input/answer is taken
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>     print(&#34;Answer: &#34; + msg)        # prints the user&#39;s input/answer
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> question_and_answer(&#34;Name the Python output command mentioned in this lesson?&#34;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span> question_and_answer(&#34;If you see many lines of code in order, what would College Board call it?&#34;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> question_and_answer(&#34;Describe a keyword used in Python to define a function?&#34;)
+
+<span class="ansi-green-intense-fg ansi-bold">/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb Cell 3</span> in <span class="ansi-cyan-fg">question_and_answer</span><span class="ansi-blue-fg">(prompt)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> def question_and_answer(prompt):   # defines question_and_answer
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1&#39;&gt;2&lt;/a&gt;</span>     print(&#34;Question: &#34; + prompt)      # asks the question
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span>     msg = input()                  # the user&#39;s input/answer is taken
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shruthim/vscode/repository2/_notebooks/2022-08-24-pythonquiz.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span>     print(&#34;Answer: &#34; + msg)
+
+File <span class="ansi-green-fg">~/.local/lib/python3.8/site-packages/ipykernel/kernelbase.py:1177</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1173</span> if not self._allow_stdin:
+<span class="ansi-green-intense-fg ansi-bold">   1174</span>     raise StdinNotImplementedError(
+<span class="ansi-green-intense-fg ansi-bold">   1175</span>         &#34;raw_input was called, but this frontend does not support input requests.&#34;
+<span class="ansi-green-intense-fg ansi-bold">   1176</span>     )
+<span class="ansi-green-fg">-&gt; 1177</span> return self._input_request(
+<span class="ansi-green-intense-fg ansi-bold">   1178</span>     str(prompt),
+<span class="ansi-green-intense-fg ansi-bold">   1179</span>     self._parent_ident[&#34;shell&#34;],
+<span class="ansi-green-intense-fg ansi-bold">   1180</span>     self.get_parent(&#34;shell&#34;),
+<span class="ansi-green-intense-fg ansi-bold">   1181</span>     password=False,
+<span class="ansi-green-intense-fg ansi-bold">   1182</span> )
+
+File <span class="ansi-green-fg">~/.local/lib/python3.8/site-packages/ipykernel/kernelbase.py:1219</span>, in <span class="ansi-cyan-fg">Kernel._input_request</span><span class="ansi-blue-fg">(self, prompt, ident, parent, password)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1216</span>             break
+<span class="ansi-green-intense-fg ansi-bold">   1217</span> except KeyboardInterrupt:
+<span class="ansi-green-intense-fg ansi-bold">   1218</span>     # re-raise KeyboardInterrupt, to truncate traceback
+<span class="ansi-green-fg">-&gt; 1219</span>     raise KeyboardInterrupt(&#34;Interrupted by user&#34;) from None
+<span class="ansi-green-intense-fg ansi-bold">   1220</span> except Exception:
+<span class="ansi-green-intense-fg ansi-bold">   1221</span>     self.log.warning(&#34;Invalid Message:&#34;, exc_info=True)
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
 </div>
 </div>
 
@@ -413,7 +451,7 @@ shruthim you scored 5/5!!
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/repository2/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/repository2/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"></ul>
 </div>
 
   </div>
