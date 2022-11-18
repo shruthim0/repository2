@@ -4,21 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Binary Math Hacks | Shruthi’s Blog :)</title>
+<title>Binary Hacks (24 bit) | Shruthi’s Blog :)</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Binary Math Hacks" />
+<meta property="og:title" content="Binary Hacks (24 bit)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="hi!" />
 <meta property="og:description" content="hi!" />
-<link rel="canonical" href="https://shruthim0.github.io/repository2/2022/11/17/PBL-binary.html" />
-<meta property="og:url" content="https://shruthim0.github.io/repository2/2022/11/17/PBL-binary.html" />
+<link rel="canonical" href="https://shruthim0.github.io/repository2/2022/11/17/binary24.html" />
+<meta property="og:url" content="https://shruthim0.github.io/repository2/2022/11/17/binary24.html" />
 <meta property="og:site_name" content="Shruthi’s Blog :)" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-17T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Binary Math Hacks" />
+<meta property="twitter:title" content="Binary Hacks (24 bit)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"hi!","headline":"Binary Math Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://shruthim0.github.io/repository2/2022/11/17/PBL-binary.html"},"url":"https://shruthim0.github.io/repository2/2022/11/17/PBL-binary.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"hi!","headline":"Binary Hacks (24 bit)","mainEntityOfPage":{"@type":"WebPage","@id":"https://shruthim0.github.io/repository2/2022/11/17/binary24.html"},"url":"https://shruthim0.github.io/repository2/2022/11/17/binary24.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/repository2/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://shruthim0.github.io/repository2/feed.xml" title="Shruthi's Blog :)" /><link rel="shortcut icon" type="image/x-icon" href="/repository2/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -99,9 +99,10 @@ window.onload = wrap_img;
             </tr>
             </table>
         </div>
+        <div id="color">Test</div>
         <div class="col-12">
             
-             
+            
             <table class="table">
             <tr>
                 
@@ -255,7 +256,10 @@ window.onload = wrap_img;
                 <td><input type="text" id="digit23" value="0" size="1" readonly="" /></td>
                 
             </tr>
-
+            </table>
+        </div>
+    </div>
+</div>
 <script>
     const BITS = 24;
     const MAX = 2 ** BITS - 1;
@@ -263,7 +267,6 @@ window.onload = wrap_img;
     const IMAGE_ON = "/repository2/images/bulb_on.gif";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "/repository2/images/bulb_off.png"
-
     // return string with current value of each bit
     function getBits() {
         let bits = "";
@@ -274,6 +277,7 @@ window.onload = wrap_img;
     }
     // setter for DOM values
     function setConversions(binary) {
+        var color = "#" + parseInt(binary, 2).toString(16);
         document.getElementById('binary').innerHTML = binary;
         // Octal conversion
         document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
@@ -281,6 +285,7 @@ window.onload = wrap_img;
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+        document.getElementById("color").style.backgroundColor = color;
     }
     //
     function decimal_2_base(decimal, base) {
@@ -299,7 +304,6 @@ window.onload = wrap_img;
         }
         return conversion;
     }
-
     // toggle selected bit and recalculate
     function toggleBit(i) {
         //alert("Digit action: " + i );
@@ -348,7 +352,7 @@ window.onload = wrap_img;
         }
     }
 </script>
-</table></div></div></div>
+
 
       </div>
     </main><footer class="site-footer h-card">
