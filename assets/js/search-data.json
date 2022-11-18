@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": "print(&quot;hello world&quot;) . hello world .",
+            "content": "Testing Python . print(&quot;hello world&quot;) . hello world .",
             "url": "https://shruthim0.github.io/repository2/2022/11/18/testingkernals.html",
             "relUrl": "/2022/11/18/testingkernals.html",
             "date": " • Nov 18, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Title",
-            "content": "const message = &quot;testing&quot; console.log(message) . testing .",
+            "content": "Testing Javascript . const message = &quot;testing&quot; console.log(message) . testing .",
             "url": "https://shruthim0.github.io/repository2/2022/11/18/testingjava.html",
             "relUrl": "/2022/11/18/testingjava.html",
             "date": " • Nov 18, 2022"
@@ -35,7 +35,7 @@
   
     
         ,"post3": {
-            "title": "Title",
+            "title": "Testing Bash",
             "content": "echo helloo! . helloo! .",
             "url": "https://shruthim0.github.io/repository2/2022/11/17/testingbash.html",
             "relUrl": "/2022/11/17/testingbash.html",
