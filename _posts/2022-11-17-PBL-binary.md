@@ -1,10 +1,6 @@
 ---
-title: Binary Math
+title: Binary Math Hacks
 layout: default
-description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
-image: /images/binary.png
-type: pbl
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
@@ -56,20 +52,6 @@ type: pbl
                 <td><input type='text' id="digit{{ i }}" Value="0" size="1" readonly></td>
                 {% endfor %}
             </tr>
-            <tr>
-                <td>128</td>
-                <td>64</td>
-                <td>32</td>
-                <td>16</td>
-                <td>8</td>
-                <td>4</td>
-                <td>2</td>
-                <td>1</td>
-            </tr>
-            </table>
-        </div>
-    </div>
-</div>
 
 <script>
     const BITS = {{ BITS }};
