@@ -130,10 +130,6 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#3.3-Expressions(Show-video-1-and-3)">3.3 Expressions(Show video 1 and 3) </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Vocab:-fill-in-the-blanks">Vocab: fill in the blanks </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#3.4-Strings(Show-video-1)">3.4 Strings(Show video 1) </a>
-<ul>
 <li class="toc-entry toc-h3"><a href="#Vocab:-fill-in-the-blanks-using-the-video">Vocab: fill in the blanks using the video </a></li>
 <li class="toc-entry toc-h3"><a href="#What-is-psuedocode?">What is psuedocode? </a></li>
 <li class="toc-entry toc-h3"><a href="#Substring/Length-Practice:-change-the-print-functions-to-print-"hello",-"bye",-and-the-string-length">Substring/Length Practice: change the print functions to print &quot;hello&quot;, &quot;bye&quot;, and the string length </a></li>
@@ -291,25 +287,47 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">7</span>
+
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">number</span><span class="p">:</span>
+            <span class="n">binary</span> <span class="o">=</span> <span class="n">binary</span> <span class="o">+</span> <span class="s2">"0"</span>
+            <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">binary</span> <span class="o">=</span> <span class="n">binary</span> <span class="o">+</span> <span class="s2">"1"</span>
+            <span class="n">number</span> <span class="o">-=</span> <span class="mi">2</span><span class="o">**</span><span class="n">i</span>
+            <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here is your number in binary:"</span><span class="p">)</span>
+<span class="n">convert</span><span class="p">(</span><span class="mi">47</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Here is your number in binary:
+00101111
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.4-Strings(Show-video-1)">
-<a class="anchor" href="#3.4-Strings(Show-video-1)" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.4 Strings(Show video 1)<a class="anchor-link" href="#3.4-Strings(Show-video-1)"> </a>
-</h2>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
