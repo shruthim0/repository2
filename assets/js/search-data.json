@@ -385,6 +385,17 @@
         
     
   
+    
+        ,"post35": {
+            "title": "3.3-3.4",
+            "content": "Intro . Represent a value with a variable | Strings, lists, booleans, numbers | Determine the value of a variable as a result of an assignment | . Defining in Pythin . To define a variable in python, just type in the variable name - one word - and use the = sign to set it equal to it&#39;s value. | variable can be defined using numbers, string, list, or boolean | Strings must have quotations around it | lists must be surrounded by square brackets | . boolean: T or F . - define dictionary w curly brackets - create a new key and set it equal to a value - can use floats ( a decimal) - can do division, multiplication, print them . Javascript . - var name = value; - can use algebra - var x = x + y - const also defines a variable . Boolean . - w = 6 and q = 5 - if w&gt;6 boolean returns ture . Data Abstraction in Python . Manages complexity in a program and makes code easier to implement | differnt variables can hvae the same object | can split and join lists and the data inside them | . numbervariable = 25 stringvariable = &quot;i am so sleepy&quot; numberlist = [1, 2, 3, 4, 5] listofstrings = [&quot;red&quot;, &quot;orange&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;blue&quot;] israining = False print(numbervariable) print(stringvariable) print(numberlist) print(listofstrings) print(israining) . 25 i am so sleepy [1, 2, 3, 4, 5] [&#39;red&#39;, &#39;orange&#39;, &#39;yellow&#39;, &#39;green&#39;, &#39;blue&#39;] False . number = 5 #defining the variable number x = number * 2 #defining a variable by using another variable print(number*2) # multiplying a variable by 2 print(x) . 10 10 . list = [] list.append(&quot;flowers&quot;) list.append(&quot;fruits&quot;) # appending a value to a defined list print(list) . [&#39;flowers&#39;, &#39;fruits&#39;] . mydictionary = {&quot;dogies&quot;:&quot;animals&quot;} # defining dictionary using curly brackets mydictionary[&quot;banana&quot;] = &quot;fruit&quot; #add keys and values to a dict by setting a value equal to a key, like shown mydictionary[&quot;couch&quot;] = &quot;furniture&quot; #editing a value inside the dictionary print(mydictionary) . {&#39;dogies&#39;: &#39;animals&#39;, &#39;banana&#39;: &#39;fruit&#39;, &#39;couch&#39;: &#39;furniture&#39;} . // boolean in javascript Boolean(w &gt; q) //true Boolean(w &lt; q) //false .",
+            "url": "https://shruthim0.github.io/repository2/2020/11/28/Unit3.3-3.4notes.html",
+            "relUrl": "/2020/11/28/Unit3.3-3.4notes.html",
+            "date": " • Nov 28, 2020"
+        }
+        
+    
+  
 
   
   
