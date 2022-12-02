@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://shruthim0.github.io/repository2/2020/11/28/Unit3.3-3.4notes.html</loc>
-<lastmod>2020-11-28T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://shruthim0.github.io/repository2/2022/08/21/firstjupyternotebook.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
@@ -131,6 +127,10 @@
 <url>
 <loc>https://shruthim0.github.io/repository2/2022/11/27/Unit3.1-3.2notes.html</loc>
 <lastmod>2022-11-27T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://shruthim0.github.io/repository2/2022/11/28/Unit3.3-3.4notes.html</loc>
+<lastmod>2022-11-28T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://shruthim0.github.io/repository2/2022/11/28/hw.html</loc>
