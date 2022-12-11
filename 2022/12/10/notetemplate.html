@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -163,14 +163,35 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">converttobinary</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
-    <span class="n">decimal</span> <span class="o">=</span> <span class="mi">7</span>
-    <span class="n">binary</span> <span class="o">=+</span> <span class="nb">int</span><span class="p">(</span><span class="n">decimal</span><span class="o">%</span><span class="k">2</span>)
-    <span class="n">decimal</span> <span class="o">=</span> <span class="n">decimal</span> <span class="o">/</span> <span class="mi">2</span>
-    <span class="n">converttobinary</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">binary</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1">#set initial</span>
+<span class="n">num</span> <span class="o">=</span> <span class="n">decimal</span>
+
+<span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="p">((</span><span class="n">num</span><span class="o">%</span><span class="k">2</span>)*(10**i)) + binary # set binary equal to remainder of the input/2, multiplied by 10^i
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#now number equal num/2 rounded to an integer</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#incriment by 1</span>
+
+<span class="c1">#output result       </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your number &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; in binary is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">binary</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your number 7 in binary is 111
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -196,9 +217,11 @@ window.onload = wrap_img;
 <span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (a) is the larger value!&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (b) is the smaller value!&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (b) is the larger value&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (a) is the smaller value!&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="n">a</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (a and b) are equal&quot;</span><span class="p">)</span>
 
@@ -215,7 +238,58 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>123 (a) is the larger value!
+<pre>4 (b) is the larger value
+1 (a) is the smaller value!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your first value&quot;</span><span class="p">))</span>
+<span class="n">b</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your second value?&quot;</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">findMax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (a) is the larger value!&quot;</span><span class="p">)</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (b) is the larger value!&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">findMin</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (a) is the smaller value!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; (b) is the smaller value!&quot;</span><span class="p">)</span>
+
+<span class="n">findMax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="n">findMin</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4 (b) is the larger value!
+1 (a) is the smaller value!
 </pre>
 </div>
 </div>
@@ -239,7 +313,19 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">charToBinary</span><span class="p">(</span><span class="n">x</span><span class="p">):()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">charToBinary</span><span class="p">(</span><span class="n">term</span><span class="p">):</span>
+  <span class="n">char</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">binary</span> <span class="o">=</span> <span class="p">[]</span> 
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">term</span><span class="p">:</span>
+    <span class="n">char</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1">#each character from APCSP is assigned to a list (char)</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">char</span><span class="p">:</span>
+    <span class="n">binary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]))</span> <span class="c1">#for each character in list char, the binary of that character is appended to binary list (I just used the built in bin conversion function)</span>
+  <span class="k">return</span> <span class="n">binary</span> <span class="c1">#binary list is printed</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &#39;APCSP&#39; in binary is: &quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">charToBinary</span><span class="p">(</span><span class="s2">&quot;APCSP&quot;</span><span class="p">))</span> 
 
 <span class="c1"># The output shown below is the output you are supposed to get</span>
 </pre></div>
@@ -254,7 +340,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&#39;&#39;APCSP&#39;&#39; in binary is 
+<pre> &#39;APCSP&#39; in binary is: 
 [1000001, 1010000, 1000011, 1010011, 1010000]
 </pre>
 </div>
