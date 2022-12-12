@@ -195,18 +195,18 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="n">binary</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1">#set initial</span>
-<span class="n">num</span> <span class="o">=</span> <span class="n">decimal</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">dectobinary</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">decimal</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">binary</span> <span class="o">=</span> <span class="p">((</span><span class="n">num</span><span class="o">%</span><span class="k">2</span>)*(10**i)) + binary # set binary equal to remainder of the input/2, multiplied by 10^i
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#now number equal num/2 rounded to an integer</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#incriment by 1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your number &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; in binary is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">binary</span><span class="p">))</span>  <span class="c1">#output result       </span>
 
-<span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
-    <span class="n">binary</span> <span class="o">=</span> <span class="p">((</span><span class="n">num</span><span class="o">%</span><span class="k">2</span>)*(10**i)) + binary # set binary equal to remainder of the input/2, multiplied by 10^i
-    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#now number equal num/2 rounded to an integer</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#incriment by 1</span>
-
-<span class="c1">#output result       </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your number &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; in binary is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">binary</span><span class="p">))</span>
+<span class="n">decimal</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">dectobinary</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span>
 </pre></div>
 
     </div>
