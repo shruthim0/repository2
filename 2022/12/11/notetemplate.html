@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -139,17 +139,49 @@ window.onload = wrap_img;
 <p>Modularity: separating a program's functions into independent pieces or blocks, each containing all the parts needed to execute a single aspect of the functionality is called</p>
 <p>Procedural Abstraction: which provides a name for a process that allows a procedure to be used only knowing WHAT it does, not HOW it does it</p>
 <p>What are some other names for procedures?: function</p>
-<p>Why are procedures effective?: They maintain organization and give a clear path for a solution</p>
+<p>Why are procedures effective?: We have the ability to alter the result without actually changing the calls to the program. Convenient to change the actions if there is an error in the code (modularity). Able to break the code up and abstract what different part of the code does; helps identiy bugs, error, etc. MUCH better than reviewing code WITHOUT a procedure (you would have to look at every line by line)</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Extra-Notes">Extra Notes<a class="anchor-link" href="#Extra-Notes"> </a></h3>
+<h3 id="Extra-Notes">Extra Notes<a class="anchor-link" href="#Extra-Notes"> </a></h3><ul>
+<li>A procedure call interrupts a series of statements and makes the program execute the statements in the procedure. After executing, it will return to the original call and finish the statements.</li>
+<li>in python, to call a procedure you would write the name of the procedure followed by the parentheses with the parameters of the procedure (there may not be parameters, but parenthesis must be there).</li>
+<li>procedural abstraction: process that allows a procedure to be used only knowing WHAT it does, not HOW it does it.<ul>
+<li>Have variable parameters</li>
+<li>Code handles different situations depending on how its parameters are set/called</li>
+<li>It allows a solution to a large problem based on the solutions of smaller subproblems.</li>
+<li>Separating a program's functions into independent pieces or blocks, each containing all the parts needed to execute a single aspect of the functionality is called modularity</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">subtraction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="n">subtraction</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Challenge-1-below:-Add-the-command-that-will-call-the-procedure."><mark>Challenge 1</mark> below: Add the command that will <strong>call</strong> the procedure.<a class="anchor-link" href="#Challenge-1-below:-Add-the-command-that-will-call-the-procedure."> </a></h2>
