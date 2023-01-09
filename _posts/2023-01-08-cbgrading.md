@@ -1,177 +1,21 @@
-{
- "cells": [
-  {
-   "attachments": {},
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# CollegeBoard Preformance Task Grading"
-   ]
-  },
-  {
-   "attachments": {},
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<style type=\"text/css\">\n",
-    ".tg  {border-collapse:collapse;border-spacing:0;}\n",
-    ".tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n",
-    "  overflow:hidden;padding:10px 5px;word-break:normal;}\n",
-    ".tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n",
-    "  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n",
-    ".tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}\n",
-    ".tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}\n",
-    ".tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}\n",
-    ".tg .tg-0lax{text-align:left;vertical-align:top}\n",
-    "</style>\n",
-    "<table class=\"tg\">\n",
-    "<thead>\n",
-    "  <tr>\n",
-    "    <th class=\"tg-fymr\"><span style=\"font-weight:bold;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Reporting Category</span></th>\n",
-    "    <th class=\"tg-fymr\"><span style=\"font-weight:bold;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">My score</span></th>\n",
-    "    <th class=\"tg-fymr\"><span style=\"font-weight:bold;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">CB Score</span></th>\n",
-    "    <th class=\"tg-0pky\"><span style=\"font-weight:bold;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Comments</span></th>\n",
-    "    <th class=\"tg-0pky\"><span style=\"font-weight:bold;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Do they match?</span></th>\n",
-    "  </tr>\n",
-    "</thead>\n",
-    "<tbody>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Program Purpose</span><br><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">and Function</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">0</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">0</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">The student met the requirement because in their video they showed entering the input, the program is run, and the output is displayed. In their response, they clearly state the functionality and lists the inputs and outputs of the function. It DOES NOT state the purpose, only the what the function does.</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Data Abstraction</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Includes code segment with a list and another segment where the code segment is being used. They correctly identify to list name as sideIndex, and describe what their list includes (different triangle classifications).</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Managing Complexity</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">0</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">0</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Response is inaccurate when describing the importance of the list. Strings could just be used, if anything the list is unnecessary.</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Procedural Abstraction</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Meets everything. ratioCalculate is the student-developed procedure, and is called in a second segment with the parameters A,B,C.  </span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Algorithm Implementation</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Explains the code segment in detail.</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Testing</span></td>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Describes two calls with different parameters and shows the output of both.</span></td>\n",
-    "    <td class=\"tg-0lax\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "</tbody>\n",
-    "</table>"
-   ]
-  },
-  {
-   "attachments": {},
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<style type=\"text/css\">\n",
-    ".tg  {border-collapse:collapse;border-spacing:0;}\n",
-    ".tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n",
-    "  overflow:hidden;padding:10px 5px;word-break:normal;}\n",
-    ".tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n",
-    "  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n",
-    ".tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}\n",
-    ".tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}\n",
-    ".tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}\n",
-    ".tg .tg-0lax{text-align:left;vertical-align:top}\n",
-    "</style>\n",
-    "<table class=\"tg\">\n",
-    "<thead>\n",
-    "  <tr>\n",
-    "    <th class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Reporting Category</span></th>\n",
-    "    <th class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">My score</span></th>\n",
-    "    <th class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">CB Score</span></th>\n",
-    "    <th class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Comments</span></th>\n",
-    "    <th class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Do they match?</span></th>\n",
-    "  </tr>\n",
-    "</thead>\n",
-    "<tbody>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Program Purpose</span><br><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">and Function</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">The student met the requirement because in their video they showed entering the input (with their mouse drawing), the program is run, and the output is displayed (the pixels moving around). In their response, they clearly state the functionality (how their program works, and the purpose (mimic Game of Life) and lists the inputs and outputs of the function.</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Data Abstraction</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Student shows the data being stored in a list, it being accessed, and is able to identify the list’s name</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Managing Complexity</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Acurrately explains why the list is necessary and how it manages complexity</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Procedural Abstraction</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">The student has a procedure called replaceList which used two parameters. Accurately describes the program’s functionality.</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Algorithm Implementation</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-fymr\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">The code uses sequencing, an if statement, and a repeat loop. They explain the process in detail.</span></td>\n",
-    "    <td class=\"tg-0pky\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "  <tr>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Testing</span></td>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">1</span></td>\n",
-    "    <td class=\"tg-1wig\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">Describes two calls with different parameters and shows the output of both.</span></td>\n",
-    "    <td class=\"tg-0lax\"><span style=\"font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent\">yes</span></td>\n",
-    "  </tr>\n",
-    "</tbody>\n",
-    "</table>"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "name": "python",
-   "version": "3.8.10 (default, Jun 22 2022, 20:18:18) \n[GCC 9.4.0]"
-  },
-  "orig_nbformat": 4,
-  "vscode": {
-   "interpreter": {
-    "hash": "916dbcbb3f70747c44a77c7bcd40155683ae19c65e1c03b4aa3499c5328201f1"
-   }
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+| Reporting Category           | My score | CB Score | Comments                                                                                                                                                                                                                                                                                                          | Do they match? |
+|------------------------------|----------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Program Purpose and Function | 0        | 0        | The student met the requirement because in their video they showed entering the input, the program is run, and the output is displayed. In their response, they clearly state the functionality and lists the inputs and outputs of the function. It DOES NOT state the purpose, only the what the function does. | yes            |
+| Data Abstraction             | 1        | 1        | Includes code segment with a list and another segment where the code segment is being used. They correctly identify to list name as sideIndex, and describe what their list includes (different triangle classifications).                                                                                        | yes            |
+| Managing Complexity          | 0        | 0        | Response is inaccurate when describing the importance of the list. Strings could just be used, if anything the list is unnecessary.                                                                                                                                                                               | yes            |
+| Procedural Abstraction       | 1        | 1        | Meets everything. ratioCalculate is the student-developed procedure, and is called in a second segment with the parameters A,B,C.                                                                                                                                                                                 | yes            |
+| Algorithm Implementation     | 1        | 1        | Explains the code segment in detail.                                                                                                                                                                                                                                                                              | yes            |
+| Testing                      | 1        | 1        | Describes two calls with different parameters and shows the output of both.                                                                                                                                                                                                                                       | yes            |
+
+
+
+
+
+| Reporting Category           | My score | CB Score | Comments                                                                                                                                                                                                                                                                                                                                                               | Do they match? |
+|------------------------------|----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Program Purpose and Function | 1        | 1        | The student met the requirement because in their video they showed entering the input (with their mouse drawing), the program is run, and the output is displayed (the pixels moving around). In their response, they clearly state the functionality (how their program works, and the purpose (mimic Game of Life) and lists the inputs and outputs of the function. | yes            |
+| Data Abstraction             | 1        | 1        | Student shows the data being stored in a list, it being accessed, and is able to identify the list’s name                                                                                                                                                                                                                                                              | yes            |
+| Managing Complexity          | 1        | 1        | Acurrately explains why the list is necessary and how it manages complexity                                                                                                                                                                                                                                                                                            | yes            |
+| Procedural Abstraction       | 1        | 1        | The student has a procedure called replaceList which used two parameters. Accurately describes the program’s functionality.                                                                                                                                                                                                                                            | yes            |
+| Algorithm Implementation     | 1        | 1        | The code uses sequencing, an if statement, and a repeat loop. They explain the process in detail.                                                                                                                                                                                                                                                                      | yes            |
+| Testing                      | 1        | 1        | Describes two calls with different parameters and shows the output of both.                                                                                                                                                                                                                                                                                            | yes            |
