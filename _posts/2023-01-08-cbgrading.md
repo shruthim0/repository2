@@ -6,15 +6,6 @@ title: Grading College Board Preformance Tasks
 ---
 
 **Task 1**
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
@@ -76,14 +67,6 @@ title: Grading College Board Preformance Tasks
 <br>
 
 **Task 2**
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
@@ -136,6 +119,124 @@ title: Grading College Board Preformance Tasks
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">1</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Describes two calls with different parameters and shows the output of both.</span></td>
     <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">yes</span></td>
+  </tr>
+</tbody>
+</table>
+
+
+# Task 3
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Reporting Category</th>
+    <th class="tg-0pky">My score</th>
+    <th class="tg-0pky">CB Score</th>
+    <th class="tg-0pky">Comments</th>
+    <th class="
+    tg-0pky">Do they match?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Program Purpose<br>and Function</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">The student's program purpose is just the program's function. They never mention the problem that is being solved.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Data Abstraction</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">Incorrectly identifies input and output. :(</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Managing Complexity</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">Student doesn't have code segment where the list is being called on</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Procedural Abstraction</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">Doesn't describe how their funtion contributes to the overall functionality of their program</td>
+    <td class="tg-0pky">No. Though they have a fucntion, they don't specify how it contributes to their program's functionality</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Algorithm Implementation</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky"> Doesn't describe the code in the detail needed for someone to be able to reacreate it</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Testing</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Describes two calls with different parameters and shows the output of both.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+</tbody>
+</table>
+
+# **Task 4**
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Reporting Category</th>
+    <th class="tg-0pky">My score</th>
+    <th class="tg-0pky">CB Score</th>
+    <th class="tg-0pky">Comments</th>
+    <th class="tg-0pky">Do they match?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Program Purpose<br>and Function</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">The video includes input, program functionality, and output. The student correctly identifies the program's purpose, function, and the inputs used in the video.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Data Abstraction</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Includes segments with list and list being used, correctly names the list and how the data in it is being used.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Managing Complexity</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Has a segemtn with list and correctly explains how the list is neccessary to the program.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Procedural Abstraction</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Has two segments with a procedure and that procedure bing called on. Correctly explains what the procedure does and hwo it contributes to the functionality of the program.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Algorithm Implementation</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">CreatePoems includes sequencing, selection, and iteration. Describes in detail the procedure.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Testing</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Describes two calls with different parameters and shows the output of both.</td>
+    <td class="tg-0pky">yes</td>
   </tr>
 </tbody>
 </table>
