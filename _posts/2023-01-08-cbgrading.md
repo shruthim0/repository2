@@ -260,7 +260,7 @@ title: Grading College Board Preformance Tasks
     <td class="tg-0pky">1</td>
     <td class="tg-0pky">0</td>
     <td class="tg-0pky">The video includes input, program functionality, and output. The student correctly identifies the program's purpose, function, and the inputs they used.</td>
-    <td class="tg-0pky">yes</td>
+    <td class="tg-0pky">yes </td>
   </tr>
   <tr>
     <td class="tg-0pky">Data Abstraction</td>
@@ -302,7 +302,6 @@ title: Grading College Board Preformance Tasks
 
 
 # **Task 4**
-</style>
 <table class="tg">
 <thead>
   <tr>
@@ -361,7 +360,6 @@ title: Grading College Board Preformance Tasks
 
 
 # **Task 6**
-</style>
 <table class="tg">
 <thead>
   <tr>
@@ -398,22 +396,22 @@ title: Grading College Board Preformance Tasks
     <td class="tg-0pky">Procedural Abstraction</td>
     <td class="tg-0pky">1</td>
     <td class="tg-0pky">1</td>
-    <td class="tg-0pky">Has two segments with a procedure and that procedure bing called on. Correctly explains what the procedure does and hwo it contributes to the functionality of the program.</td>
+    <td class="tg-0pky">Has two segments with a procedure, isitcorrect, and that procedure bing called on. Has two parameters, checkanswer and answer. Correctly explains what the procedure does and hwo it contributes to the functionality of the program.</td>
     <td class="tg-0pky">yes</td>
   </tr>
   <tr>
     <td class="tg-0pky">Algorithm Implementation</td>
     <td class="tg-0pky">1</td>
     <td class="tg-0pky">1</td>
-    <td class="tg-0pky">findWinner, has sequencing, selection and iteration. Student explains in enough detail to recreate.</td>
+    <td class="tg-0pky">isitcorrect, has sequencing, selection and iteration. Student explains in enough detail to recreate.</td>
     <td class="tg-0pky">yes</td>
   </tr>
   <tr>
     <td class="tg-0pky">Testing</td>
-    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">1</td>
     <td class="tg-0pky">0</td>
     <td class="tg-0pky">Procedure is called twice, wach time with different parameters. Describes both calls.</td>
-    <td class="tg-0pky">yes</td>
+    <td class="tg-0pky">no. the student only gives the conditions being tested, NOT the arguments being passed through.</td>
   </tr>
 </tbody>
 </table>
