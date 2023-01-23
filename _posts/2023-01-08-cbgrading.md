@@ -311,10 +311,12 @@ title: Grading College Board Preformance Tasks
 </table>
 <br>
 <br>
+<br>
 
 
 
 # **Task 6**
+
 <table class="tg">
 <thead>
   <tr>
@@ -375,7 +377,7 @@ title: Grading College Board Preformance Tasks
 <br>
 
 
-# Week 19
+## **Week 19**
 
 ## Task 7
 <table class="tg">
