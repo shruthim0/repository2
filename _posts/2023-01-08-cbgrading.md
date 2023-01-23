@@ -377,7 +377,7 @@ title: Grading College Board Preformance Tasks
 
 # Week 19
 
-## **Task 7**
+## Task 7
 <table class="tg">
 <thead>
   <tr>
