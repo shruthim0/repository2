@@ -5,7 +5,7 @@ description:
 title: Grading College Board Preformance Tasks
 ---
 
-**Task 1**
+## **Task 1**
 <table class="tg">
 <thead>
   <tr>
@@ -66,7 +66,7 @@ title: Grading College Board Preformance Tasks
 <br>
 <br>
 
-**Task 2**
+## **Task 2**
 <table class="tg">
 <thead>
   <tr>
@@ -124,7 +124,7 @@ title: Grading College Board Preformance Tasks
 </table>
 
 
-# Task 3
+## Task 3
 </style>
 <table class="tg">
 <thead>
@@ -183,7 +183,7 @@ title: Grading College Board Preformance Tasks
 </tbody>
 </table>
 
-# **Task 4**
+## **Task 4**
 </style>
 <table class="tg">
 <thead>
@@ -242,8 +242,7 @@ title: Grading College Board Preformance Tasks
 </table>
 
 
-# **Task 5**
-</style>
+## **Task 5**
 <table class="tg">
 <thead>
   <tr>
@@ -300,66 +299,7 @@ title: Grading College Board Preformance Tasks
 </tbody>
 </table>
 
-
-# **Task 4**
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Reporting Category</th>
-    <th class="tg-0pky">My score</th>
-    <th class="tg-0pky">CB Score</th>
-    <th class="tg-0pky">Comments</th>
-    <th class="tg-0pky">Do they match?</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">Program Purpose<br>and Function</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">The video includes input, program functionality, and output. The student correctly identifies the program's purpose, function, and the inputs used in the video.</td>
-    <td class="tg-0pky">yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Data Abstraction</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">Includes segments with list and list being used, correctly names the list and how the data in it is being used.</td>
-    <td class="tg-0pky">yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Managing Complexity</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">Has a segment with list and correctly explains how the list is neccessary to the program.</td>
-    <td class="tg-0pky">yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Procedural Abstraction</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">Has two segments with a procedure and that procedure bing called on. Correctly explains what the procedure does and hwo it contributes to the functionality of the program.</td>
-    <td class="tg-0pky">yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Algorithm Implementation</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">CreatePoems includes sequencing, selection, and iteration. Describes in detail the procedure.</td>
-    <td class="tg-0pky">yes</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Testing</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">1</td>
-    <td class="tg-0pky">Describes two calls with different parameters and shows the output of both.</td>
-    <td class="tg-0pky">yes</td>
-  </tr>
-</tbody>
-</table>
-
-
-# **Task 6**
+## **Task 6**
 <table class="tg">
 <thead>
   <tr>
@@ -415,3 +355,118 @@ title: Grading College Board Preformance Tasks
   </tr>
 </tbody>
 </table>
+
+## **Task 7**
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Reporting Category</th>
+    <th class="tg-0pky">My score</th>
+    <th class="tg-0pky">CB Score</th>
+    <th class="tg-0pky">Comments</th>
+    <th class="tg-0pky">Do they match?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Program Purpose<br>and Function</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">The video includes input, program functionality, and output. The student correctly identifies the program's purpose, function, and the inputs they used.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Data Abstraction</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky"> Second code segemnt DOES NOT show the data being accessed frm the list RPS. </td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Managing Complexity</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">List DOES NOT manage complexity. An if statement could have just been used. USer doesn't explain the neccessity of the list correctly.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Procedural Abstraction</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">0</td>
+    <td class="tg-0pky">Missing: how the procedure contributes to the overall program. Student is too vague.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Algorithm Implementation</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Student algorithm, rpsGame has squencing, selection, and iteration. Student explains the algorithm in enough detil to recreate.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Testing</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Procedure is called twice, wach time with different parameters. Describes both calls.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+</tbody>
+</table>
+
+## **Task 8**
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Reporting Category</th>
+    <th class="tg-0pky">My score</th>
+    <th class="tg-0pky">CB Score</th>
+    <th class="tg-0pky">Comments</th>
+    <th class="tg-0pky">Do they match?</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Program Purpose<br>and Function</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">The video includes input, program functionality, and output. The student correctly identifies the program's purpose, function, and the inputs they used.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Data Abstraction</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky"> Second code segemnt DOES NOT show the data being accessed frm the list RPS. </td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Managing Complexity</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">List DOES NOT manage complexity. An if statement could have just been used. USer doesn't explain the neccessity of the list correctly.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Procedural Abstraction</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Missing: how the procedure contributes to the overall program. Student is too vague.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Algorithm Implementation</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Student algorithm, rpsGame has squencing, selection, and iteration. Student explains the algorithm in enough detil to recreate.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Testing</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">Procedure is called twice, wach time with different parameters. Describes both calls.</td>
+    <td class="tg-0pky">yes</td>
+  </tr>
+</tbody>
+</table>
+
