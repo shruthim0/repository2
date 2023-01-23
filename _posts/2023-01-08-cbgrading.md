@@ -254,6 +254,7 @@ title: Grading College Board Preformance Tasks
 <br>
 
 ## **Task 5**
+
 <table class="tg">
 <thead>
   <tr>
@@ -315,7 +316,7 @@ title: Grading College Board Preformance Tasks
 
 
 
-# **Task 6**
+## **Task 6**
 
 <table class="tg">
 <thead>
