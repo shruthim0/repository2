@@ -124,7 +124,7 @@ title: Grading College Board Preformance Tasks
 </table>
 
 
-## Task 3
+## **Task 3**
 <table class="tg">
 <thead>
   <tr>
@@ -182,7 +182,7 @@ title: Grading College Board Preformance Tasks
 </tbody>
 </table>
 
-## Task 4
+## **Task 4**
 <table class="tg">
 <thead>
   <tr>
@@ -240,7 +240,7 @@ title: Grading College Board Preformance Tasks
 </table>
 
 
-## Task 5
+## **Task 5**
 <table class="tg">
 <thead>
   <tr>
@@ -354,7 +354,8 @@ title: Grading College Board Preformance Tasks
 </tbody>
 </table>
 
-## Task 7
+## **Task 7**
+
 <table class="tg">
 <thead>
   <tr>
@@ -411,8 +412,7 @@ title: Grading College Board Preformance Tasks
 </tbody>
 </table>
 
-## Task 8
-## **Task 2**
+## **Task 8**
 <table class="tg">
 <thead>
   <tr>
@@ -469,7 +469,7 @@ title: Grading College Board Preformance Tasks
 </tbody>
 </table>
 
-## Task 9
+## **Task 9**
 <table class="tg">
 <thead>
   <tr>
@@ -527,7 +527,7 @@ title: Grading College Board Preformance Tasks
 </table>
 
 
-## Task 10
+## **Task 10**
 <table class="tg">
 <thead>
   <tr>
