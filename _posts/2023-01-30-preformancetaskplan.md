@@ -12,8 +12,6 @@ title: Preformance Task Outline
 - **Outputs**: List of 10 recipes with images that meet 
 input criteria. User can opt to get a another 10 recipes.
 - **Frontend**:
-![agile methodology diagram]({{ site.baseurl }}/images/Agile Methodology Diagram.png)
-![agile methodology diagram]({{ site.baseurl }}/images/Agile Methodology Diagram.png)
 
 ![frontend]({{ site.baseurl }}/images/2023-01-25.png)
 ![buttonss]({{ site.baseurl }}/images/2023-01-25 (1).png)
