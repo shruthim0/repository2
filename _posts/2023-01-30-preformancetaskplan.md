@@ -12,8 +12,12 @@ title: Preformance Task Outline
 - **Outputs**: List of 10 recipes with images that meet 
 input criteria. User can opt to get a another 10 recipes.
 - **Frontend**:
-![Buttons](images/2023-01-25.png)
-![Buttons2](images/2023-01-25 (1).png)
+![agile methodology diagram]({{ site.baseurl }}/images/Agile Methodology Diagram.png)
+![agile methodology diagram]({{ site.baseurl }}/images/Agile Methodology Diagram.png)
+
+![frontend]({{ site.baseurl }}/images/2023-01-25.png)
+![buttonss]({{ site.baseurl }}/images/2023-01-25 (1).png)
+
 - **Backend**: Will require an API, specifically the “MyCookbook.io” API which will provide recipes with specific cooking time, images of said foods, ingredients, and instructions.
 
 
