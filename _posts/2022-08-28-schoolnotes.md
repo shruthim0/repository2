@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: class notes/resources 
 categories: [school]
 title: Class Notes and Resources

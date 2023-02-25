@@ -213,7 +213,7 @@ formElement.onsubmit = function submitAnswers(){
 
   //Recipe Generator
   function generateLink() {
-        // List of recipes
+        // List of mood recipes
         const recipeLinks = [
           "https://www.foodnetwork.com/recipes/ina-garten/roast-chicken-recipe-1940592",
           "https://www.allrecipes.com/recipe/27010/classic-beef-stroganoff/",
@@ -228,7 +228,63 @@ formElement.onsubmit = function submitAnswers(){
           "https://www.modernhoney.com/fettuccine-alfredo/",
         ];
 
-        // Generate a  recipe link
+        const happy = [
+          "https://www.foodnetwork.com/recipes/ina-garten/roast-chicken-recipe-1940592",
+          "https://www.allrecipes.com/recipe/27010/classic-beef-stroganoff/",
+          "https://www.epicurious.com/recipes/food/views/pork-tacos-with-pineapple-salsa-56389926",
+          "https://www.delish.com/uk/cooking/recipes/a31010080/chicken-alfredo-pasta-bake-recipe/",
+          "https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe",
+          "https://www.simplyrecipes.com/recipes/banana_bread/",
+          "https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/",
+          "https://www.abeautifulplate.com/the-best-homemade-margherita-pizza/",
+          "https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/",
+          "https://www.allrecipes.com/recipe/82659/old-fashioned-onion-rings/",
+          "https://www.modernhoney.com/fettuccine-alfredo/",
+        ];
+
+        const sad = [
+          "https://www.foodnetwork.com/recipes/ina-garten/roast-chicken-recipe-1940592",
+          "https://www.allrecipes.com/recipe/27010/classic-beef-stroganoff/",
+          "https://www.epicurious.com/recipes/food/views/pork-tacos-with-pineapple-salsa-56389926",
+          "https://www.delish.com/uk/cooking/recipes/a31010080/chicken-alfredo-pasta-bake-recipe/",
+          "https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe",
+          "https://www.simplyrecipes.com/recipes/banana_bread/",
+          "https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/",
+          "https://www.abeautifulplate.com/the-best-homemade-margherita-pizza/",
+          "https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/",
+          "https://www.allrecipes.com/recipe/82659/old-fashioned-onion-rings/",
+          "https://www.modernhoney.com/fettuccine-alfredo/",
+        ];
+
+        const stressed = [
+          "https://www.foodnetwork.com/recipes/ina-garten/roast-chicken-recipe-1940592",
+          "https://www.allrecipes.com/recipe/27010/classic-beef-stroganoff/",
+          "https://www.epicurious.com/recipes/food/views/pork-tacos-with-pineapple-salsa-56389926",
+          "https://www.delish.com/uk/cooking/recipes/a31010080/chicken-alfredo-pasta-bake-recipe/",
+          "https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe",
+          "https://www.simplyrecipes.com/recipes/banana_bread/",
+          "https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/",
+          "https://www.abeautifulplate.com/the-best-homemade-margherita-pizza/",
+          "https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/",
+          "https://www.allrecipes.com/recipe/82659/old-fashioned-onion-rings/",
+          "https://www.modernhoney.com/fettuccine-alfredo/",
+        ];
+
+        const angry = [
+          "https://www.foodnetwork.com/recipes/ina-garten/roast-chicken-recipe-1940592",
+          "https://www.allrecipes.com/recipe/27010/classic-beef-stroganoff/",
+          "https://www.epicurious.com/recipes/food/views/pork-tacos-with-pineapple-salsa-56389926",
+          "https://www.delish.com/uk/cooking/recipes/a31010080/chicken-alfredo-pasta-bake-recipe/",
+          "https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe",
+          "https://www.simplyrecipes.com/recipes/banana_bread/",
+          "https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/",
+          "https://www.abeautifulplate.com/the-best-homemade-margherita-pizza/",
+          "https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/",
+          "https://www.allrecipes.com/recipe/82659/old-fashioned-onion-rings/",
+          "https://www.modernhoney.com/fettuccine-alfredo/",
+        ];
+
+        // Generate a  recipe link based on what emotion user picked
         const randomLink = recipeLinks[Math.floor(Math.random() * recipeLinks.length)];
 
         // Display the  recipe link

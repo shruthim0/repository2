@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: page
+layout: base
 description: My notes and progress
 title: Notes
 permalink: /notes/

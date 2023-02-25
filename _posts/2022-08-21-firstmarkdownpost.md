@@ -1,6 +1,6 @@
 ---
 toc: false
-layout: post
+layout: base
 description: testing out markdown
 categories: [markdown]
 title: First Markdown Post !
