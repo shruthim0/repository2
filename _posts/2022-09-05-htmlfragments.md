@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: using html table fragments
 categories: [markdown]
 title: My Daily Schedule

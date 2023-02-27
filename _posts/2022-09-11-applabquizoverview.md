@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Brainstorming and Planning 
 categories: [markdown]
 title: Planning out AppLab Quiz

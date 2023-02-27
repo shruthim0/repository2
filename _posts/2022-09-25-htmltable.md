@@ -1,6 +1,6 @@
 ---
 toc: false
-layout: post
+layout: base
 description: 
 categories: [markdown]
 title: Making a Table with HTML

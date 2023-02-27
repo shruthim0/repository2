@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description:
 categories: [markdown] 
 title: Agile Methodology

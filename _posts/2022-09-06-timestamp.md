@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: 
 categories: [school]
 title: Time Stamp

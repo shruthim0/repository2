@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: notes 
 categories: [markdown]
 title: Psychology and the Good Life notes

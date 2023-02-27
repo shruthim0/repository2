@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Reviewing incorrect answers for Tri 1 Final Exam
 categories: [markdown]
 title: Tri 1 Final Exam Review
