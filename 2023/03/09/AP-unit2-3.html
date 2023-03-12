@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      19 min read
+      20 min read
     
 </span></p>
 
@@ -253,7 +253,10 @@ window.onload = wrap_img;
 
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="c1"># What part of the data set needs to be cleaned?</span>
+      <span class="c1"># "Junior", "9th Grade" need to be cleaned</span>
 <span class="c1"># From PBL learning, what is a good time to clean data?  Hint, remember Garbage in, Garbage out?</span>
+      <span class="c1"># When data is enterd by users</span>
+      <span class="c1"># ex. if user enters something with numbers into a field called "Name"</span>
 </pre></div>
 
     </div>
@@ -325,6 +328,46 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>     GPA
+0   3.57
+1   4.00
+2   2.78
+3   3.45
+4   4.75
+5   3.33
+6   2.95
+7   3.90
+8   3.15
+9   2.80
+10  3.45
+11  2.75
+
+Student ID  GPA
+       123 3.57
+       246 4.00
+       578 2.78
+       469 3.45
+       324 4.75
+       313 3.33
+       145 2.95
+       167 3.90
+       235 3.15
+       nil 2.80
+       469 3.45
+       456 2.75
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1228,7 +1271,8 @@ Do students who spend more time studying for tests tend to earn higher grades in
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/co2em.json'</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="c1"># two columns and remove the index </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Country'</span><span class="p">,</span><span class="s1">'Emissions2017'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -1242,19 +1286,100 @@ Do students who spend more time studying for tests tend to earn higher grades in
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>                 Country  Emissions2017
-0            Afghanistan       0.131695
-1                 Angola       0.813301
-2                Albania       1.788786
-3                Andorra       6.104134
-4   United Arab Emirates      20.769022
-..                   ...            ...
-89               Somalia      10.230000
-90           South Korea      12.710000
-91            Kazakhstan      17.520000
-92               Iceland      10.480000
-93          Turkmenistan      12.290000
-
-[94 rows x 2 columns]
+             Afghanistan       0.131695
+                  Angola       0.813301
+                 Albania       1.788786
+                 Andorra       6.104134
+    United Arab Emirates      20.769022
+               Argentina       4.071308
+                 Armenia       1.823560
+          American Samoa       1.490000
+     Antigua and Barbuda       5.239717
+               Australia      15.818316
+                 Austria       7.486162
+              Azerbaijan       3.243342
+                 Burundi       0.048952
+                 Belgium       0.048952
+                   Benin       0.614755
+            Burkina Faso       0.222474
+              Bangladesh       0.496852
+                Bulgaria       6.201290
+                 Bahrain      20.427328
+                 Bahamas       5.684363
+  Bosnia and Herzegovina       6.767051
+                 Belarus       5.921351
+                  Belize       1.703147
+                Bermunda       6.990000
+                 Bolivia       2.032547
+                  Brazil       2.196418
+                Barbados       4.122573
+       Brunei Barussalam      21.640000
+                  Bhutan       1.301030
+                Botswana       3.324148
+Central African Republic       0.047867
+                  Canada      15.544571
+             Switzerland       4.578885
+                   Chile       4.714020
+                   China       7.230985
+           Cote d'Ivoire       0.432123
+                Cameroon       0.373279
+        Congo, Dem. Rep.       0.035013
+             Congo, Rep.       1.058563
+                Colombia       1.533229
+                 Comoros       0.344027
+              Cabo Verde       1.097676
+              Costa Rica       1.668702
+                    Cuba       2.314085
+          Cayman Islands       2.310000
+                  Cyprus       6.230000
+          Czech Republic       6.238954
+                 Germany       9.611647
+                Djibouti       8.858294
+                Dominica       0.444868
+                 Denmark       2.378953
+      Dominican Republic       5.746768
+                 Algeria       2.240060
+                 Ecuador       3.825638
+        Egypt, Arab Rep.       2.296645
+                 Eritrea       2.511650
+                   Spain       0.210965
+                 Estonia       5.654254
+                Ethiopia      12.684228
+                 Finland       0.148684
+                  Mexico       3.790000
+             New Zealand       7.520000
+                    Fiji       4.749543
+                  France       4.750000
+           Faroe Islands       1.614915
+   Micronesia, Fed. Sts.       2.581349
+                   Gabon       5.555652
+          United Kingdom       5.860000
+                 Georgia       2.609976
+                   Ghana       0.584105
+               Gibraltar       0.124352
+                  Guinea       0.276776
+                  Gambia       0.243913
+           Guinea-Bissau       0.169571
+      Equaatorial Guinea       4.595851
+                  Greece       6.211250
+                 Grenada       2.615582
+                  Russia      11.370000
+               Guatemala       1.029997
+                   Italy       5.440000
+                   India       1.733361
+           United States      14.823261
+                   Qatar      32.127990
+               Greenland       9.690000
+            Saudi Arabia      18.820000
+                 Somalia       0.040000
+                  Kuwait      23.290000
+     Trinidad and Tobago      27.270000
+                    Oman      15.110000
+                 Somalia      10.230000
+             South Korea      12.710000
+              Kazakhstan      17.520000
+                 Iceland      10.480000
+            Turkmenistan      12.290000
 </pre>
 </div>
 </div>
