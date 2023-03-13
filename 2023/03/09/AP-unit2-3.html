@@ -149,7 +149,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Machine-Learning">Machine Learning </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
+<li class="toc-entry toc-h1"><a href="#My-Hacks">My Hacks </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#2.3-Questions">2.3 Questions </a></li>
 <li class="toc-entry toc-h2"><a href="#1990-vs.-2017-Carbon-Emissions-per-Nation">1990 vs. 2017 Carbon Emissions per Nation </a>
@@ -1158,8 +1158,8 @@ None
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hacks">
-<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+<h1 id="My-Hacks">
+<a class="anchor" href="#My-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Hacks<a class="anchor-link" href="#My-Hacks"> </a>
 </h1>
 </div>
 </div>
@@ -1235,7 +1235,7 @@ Do students who spend more time studying for tests tend to earn higher grades in
 <h3 id="Purpose:">
 <a class="anchor" href="#Purpose:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose:<a class="anchor-link" href="#Purpose:"> </a>
 </h3>
-<p>The purpose of this dataset is to investigate which nations contributed the most CO2 emissions in 2017 vs in 1990.</p>
+<p>The purpose of this dataset is to investigate the Carbon emissions for nations in 2017 vs in 1990. It allows people to see which nations increased in their emissions, which decreased, which nations are the greatest contibuters... I found a dataset on Kaggle, which had CO2 emissions for years 1990--&gt;2018. I created a json file, but only used the "Country" "1990 Carbon Emissions" and "2017 Carbon Emissions."</p>
 
 </div>
 </div>
@@ -1296,6 +1296,8 @@ Do students who spend more time studying for tests tend to earn higher grades in
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Country'</span><span class="p">,</span><span class="s1">'Emissions1990'</span><span class="p">,</span><span class="s1">'Emissions2017'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+
+<span class="c1">#print data, but dont show index values</span>
 </pre></div>
 
     </div>
@@ -1424,7 +1426,7 @@ Central African Republic       0.053443       0.047867
 
 <span class="nb">print</span><span class="p">()</span>
 
-<span class="c1">#try two columns and remove the index from print statement</span>
+<span class="c1">#try 3 columns and remove the index from print statement</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Emissions1990'</span><span class="p">,</span><span class="s1">'Emissions2017'</span><span class="p">,</span><span class="s1">'Country'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
