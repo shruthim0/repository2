@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -119,7 +119,6 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
 <li class="toc-entry toc-h1"><a href="#Database-Programming-is-Program-with-Data">Database Programming is Program with Data </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db </a></li>
@@ -140,18 +139,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Notes">
-<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
-</h2>
-<p>Imperitive: series of functions
-OOP: focuses on the data first</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -179,10 +166,18 @@ OOP: focuses on the data first</p>
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- Defines how data is organized within a relational database.
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?
-  It is what the user, for example, </li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>A way to differentiate each column (unique to each)</li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>To extract data from a table that is visited more than once during a process.</li>
+</ul>
+</li>
 <li>What are the Data Types in SQL table?
   String, numeric (integer), post (where you could directly put in a python dictionary)</li>
 </ul>
@@ -239,14 +234,15 @@ OOP: focuses on the data first</p>
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?
-  Connecting to a database...</li>
-<li>
-<p>Same for cursor object?</p>
+<li>What is a connection object?  After you google it, what do you think it does?<ul>
+<li>How you connecting to a database. Equivalent to a network connection to the database server</li>
+</ul>
 </li>
-<li>
-<p>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</p>
+<li>Same for cursor object?<ul>
+<li>A database object to retrieve data one row at a time.</li>
+</ul>
 </li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
 <li>Is "results" an object?  How do you know?
   Yes, because it has data and functions.</li>
 </ul>
@@ -321,8 +317,14 @@ OOP: focuses on the data first</p>
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>2b is shorter than 2a, more straightforward.</li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.<ul>
+<li>It is an SQL command that will insert the givene value into that table row+column</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -400,9 +402,20 @@ OOP: focuses on the data first</p>
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<ul>
+<li>If the user tries to update their password to something smaller than 2 in length, then the pwd will instead be updated to be 'gothackednewpassword123'</li>
+</ul>
+</li>
+<li>Explain try/except, when would except occur?<ul>
+<li>The except error would occur when an sqlite3 error occured, opposed to an error regarding the uid not being found.</li>
+</ul>
+</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<ul>
+<li>conn = sqlite3.connect(database)</li>
+<li>cursor = conn.cursor()</li>
+<li>To connect to the sqlite database file, and create a cursor object (so that SQL commands can be used), these lines must be repeated in every code cell</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -469,8 +482,15 @@ OOP: focuses on the data first</p>
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>Yes, because data is lost, and the action is often irreversible</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>"f" is, </li>
+<li>{uid} will be replaced with the value for the variable, uid, the uid the user entered.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -518,20 +538,6 @@ OOP: focuses on the data first</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while executing the DELETE: no such table: scores1
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -544,8 +550,10 @@ OOP: focuses on the data first</p>
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?
-  Recursion:th emethod calls itself, but there is a special key (esc key in this case) that allows exit- Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<ul>
+<li>Recursion:the  calls itself, but there is a special key (esc key in this case) that allows exit</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
