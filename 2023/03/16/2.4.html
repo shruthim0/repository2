@@ -586,7 +586,6 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
     <span class="k">if</span> <span class="n">user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"User </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2"> is not found :("</span><span class="p">)</span>
         <span class="k">return</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">Review</span><span class="p">)</span>
 
     <span class="n">new_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your new name: "</span><span class="p">)</span>
     <span class="n">new_rating</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your new rating: "</span><span class="p">)</span>
@@ -595,9 +594,9 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">user</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_name</span><span class="p">,</span> <span class="n">new_rating</span><span class="p">,</span> <span class="n">new_comments</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"User </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2"> has been updated."</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Recipe link, </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2">, has been updated with the name, </span><span class="si">{</span><span class="n">new_name</span><span class="si">}</span><span class="s2">, with the rating </span><span class="si">{</span><span class="n">new_rating</span><span class="si">}</span><span class="s2">, and the comments, </span><span class="si">{</span><span class="n">new_comments</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There was an problem in updating user </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There was an problem in updating recipe, </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         
 <span class="n">update</span><span class="p">()</span>
 </pre></div>
@@ -612,7 +611,7 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>User  is not found :(
+<pre>Recipe link, https://www.loveandlemons.com/brownies-recipe/, has been updated with the name, Shruthi, with the rating 9, and the comments, YUM!
 </pre>
 </div>
 </div>
@@ -652,8 +651,7 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
             <span class="n">user</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Recipe, </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2"> has been deleted."</span><span class="p">)</span>
         <span class="k">except</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There was an problem in deleting that recipe </span><span class="si">{</span><span class="n">recipelink</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-        
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Enter a recipe link that already exists"</span><span class="p">)</span>        
 <span class="n">delete</span><span class="p">()</span>
 </pre></div>
 
@@ -667,8 +665,8 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Recipe,  is not found :(
-There was an problem in deleting that recipe 
+<pre>Recipe, https://thestayathomechef.com/the-most-amazing-chocolate-cake/ is not found :(
+Enter a recipe link that already exists
 </pre>
 </div>
 </div>
