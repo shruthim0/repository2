@@ -396,11 +396,11 @@ window.onload = wrap_img;
 <li>Comment on how these work?<ol>
 <li>Create All Tables from db Object</li>
 <li>User Object Constructors</li>
-<li>Try / Except </li>
+<li>Try / Except:If the try does not work, then the except will be executed. 
+ORM= </li>
 </ol>
 </li>
 </ul>
-<p>ORM=</p>
 
 </div>
 </div>
@@ -431,11 +431,11 @@ window.onload = wrap_img;
 
         <span class="sd">"""Builds sample user/note(s) data"""</span>
         <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
-            <span class="k">try</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>                        <span class="c1">#try to add new user</span>
                 <span class="sd">'''add user to table'''</span>
                 <span class="nb">object</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Created new name </span><span class="si">{</span><span class="nb">object</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-            <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object nit created</span>
+            <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if it does not work        </span>
                 <span class="sd">'''fails with bad or duplicate data'''</span>
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Records exist name </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, or error."</span><span class="p">)</span>
     
@@ -479,8 +479,7 @@ Created new name Kavya
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by:filters through User, by a specific attribute.    2. user.password: Sets user's pwd.</li>
 </ol>
 </li>
 </ul>
@@ -531,10 +530,9 @@ Created new name Kavya
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
+<li>user.find_by_uid() and try/except:Find a specific entry by searching by uid    2. user = User(...): initializes/sets the User object</li>
+<li>user.dob and try/except: Creates the User attribute of dob. If DOB is set to be todays date, except will be run.</li>
+<li>user.create() and try/except: Creates new user. Error will be raised if the user was not build.</li>
 </ol>
 </li>
 </ul>
@@ -626,7 +624,7 @@ Created new name Kavya
 </ul>
 </li>
 <li>json_ready assignment, google List Comprehension<ul>
-<li>List comprehensions provide a concise way to create lists</li>
+<li>List comprehensions provide a concise way to create list</li>
 </ul>
 </li>
 </ol>
