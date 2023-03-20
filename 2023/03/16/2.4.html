@@ -195,9 +195,9 @@ window.onload = wrap_img;
 
     <span class="c1"># Define the User schema with &quot;vars&quot; from object</span>
     <span class="nb">id</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">_recipelink</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_recipelink</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">_name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">_recipename</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">_recipename</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">_rating</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">_comments</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span> <span class="n">unique</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
@@ -364,7 +364,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created new rating https://sallysbakingaddiction.com/lemon-meringue-pie/
+<pre>Records exist for recipe https://sallysbakingaddiction.com/lemon-meringue-pie/, or error.
 Records exist for recipe https://www.foodnetwork.com/recipes/food-network-kitchen/apple-pie-recipe-2011423, or error.
 Records exist for recipe https://www.loveandlemons.com/brownies-recipe/, or error.
 Records exist for recipe https://addapinch.com/the-best-chocolate-cake-recipe-ever/, or error.
@@ -460,7 +460,7 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
             <span class="nb">object</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Created</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">object</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
         <span class="k">except</span><span class="p">:</span>  <span class="c1"># if link already exists</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Someone has already entered this </span><span class="si">{recipelink}</span><span class="s2">&quot;</span><span class="p">)</span>  
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Someone has already entered this </span><span class="si">{name}</span><span class="s2">&quot;</span><span class="p">)</span>  
 <span class="n">create</span><span class="p">()</span>
 </pre></div>
 
@@ -474,7 +474,7 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Someone has already entered this {recipelink}
+<pre>Someone has already entered this {name}
 </pre>
 </div>
 </div>
@@ -513,13 +513,7 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[{&#39;id&#39;: 1,
-  &#39;recipelink&#39;: &#39;https://sallysbakingaddiction.com/lemon-meringue-pie/&#39;,
-  &#39;recipename&#39;: &#39;https://sallysbakingaddiction.com/lemon-meringue-pie/&#39;,
-  &#39;name&#39;: &#39;Shruthi&#39;,
-  &#39;rating&#39;: 8,
-  &#39;comments&#39;: &#39;Really good recipe, would definitely recommend&#39;},
- {&#39;id&#39;: 2,
+<pre>[{&#39;id&#39;: 2,
   &#39;recipelink&#39;: &#39;https://www.foodnetwork.com/recipes/food-network-kitchen/apple-pie-recipe-2011423&#39;,
   &#39;recipename&#39;: &#39;https://www.foodnetwork.com/recipes/food-network-kitchen/apple-pie-recipe-2011423&#39;,
   &#39;name&#39;: &#39;Claire&#39;,
@@ -542,7 +536,19 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
   &#39;recipename&#39;: &#39;https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/&#39;,
   &#39;name&#39;: &#39;Katelyn&#39;,
   &#39;rating&#39;: 10,
-  &#39;comments&#39;: &#39;Really good recipe, loved&#39;}]</pre>
+  &#39;comments&#39;: &#39;Really good recipe, loved&#39;},
+ {&#39;id&#39;: 6,
+  &#39;recipelink&#39;: &#39;https://sallysbakingaddiction.com/lemon-meringue-pie/&#39;,
+  &#39;recipename&#39;: &#39;https://sallysbakingaddiction.com/lemon-meringue-pie/&#39;,
+  &#39;name&#39;: &#39;Shruthi&#39;,
+  &#39;rating&#39;: 8,
+  &#39;comments&#39;: &#39;Really good recipe, would definitely recommend&#39;},
+ {&#39;id&#39;: 7,
+  &#39;recipelink&#39;: &#39;https://www.delish.com/cooking/recipe-ideas/g269/homemade-pizza-recipes/&#39;,
+  &#39;recipename&#39;: &#39;https://www.delish.com/cooking/recipe-ideas/g269/homemade-pizza-recipes/&#39;,
+  &#39;name&#39;: &#39;Jay&#39;,
+  &#39;rating&#39;: 6,
+  &#39;comments&#39;: &#39;Variety good&#39;}]</pre>
 </div>
 
 </div>
@@ -600,8 +606,7 @@ Records exist for recipe https://joyfoodsunshine.com/the-most-amazing-chocolate-
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;__main__.Review&#39;&gt;
-User https://www.loveandlemons.com/brownies-recipe/ has been updated.
+<pre>User  is not found :(
 </pre>
 </div>
 </div>
@@ -653,8 +658,8 @@ User https://www.loveandlemons.com/brownies-recipe/ has been updated.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Recipe, https://sallysbakingaddiction.com/lemon-meringue-pie/ is not found :(
-There was an problem in deleting that recipe https://sallysbakingaddiction.com/lemon-meringue-pie/
+<pre>Recipe,  is not found :(
+There was an problem in deleting that recipe 
 </pre>
 </div>
 </div>
