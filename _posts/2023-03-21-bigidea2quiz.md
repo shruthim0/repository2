@@ -43,5 +43,5 @@ title: Big Idea 2 Quiz
 ## Questions I have
 - I am not sure if I am taking too much time on the binary questions. Usually what I do is convert the given binary value to decimal, and then do the same for each anser choice until I get the decimal value I need. Is there a better way to approach these questions?
 
-
 ## Overall 
+- I am getting better at understanding the information and vocabulary. Now I need to improve my speed.
