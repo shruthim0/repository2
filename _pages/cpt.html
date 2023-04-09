@@ -1,0 +1,121 @@
+---
+layout: base
+permalink: /foodforyourmood/
+title: CPT
+search_exclude: true
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      #quiz-form {
+        display: inline-block;
+        text-align: left;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+      <label>
+        Choose your quiz topic:
+        <select id="quiz-type">
+          <option value="h">Historical figures</option>
+          <option value="p">Pop culture</option>
+        </select>
+      </label>
+      <br><br>
+      <label>
+        How many questions do you want to be asked?
+        <input type="number" id="number" min="1" max="10" value="1">
+      </label>
+      <br><br>
+      <input type="submit" value="Start Quiz">
+    </form>
+    <div id="quiz"></div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
+
+<script>
+const historical = {
+  "Barack Obama": "president",
+  "Aristotle": "philosopher",
+  "Thomas Jefferson": "president",
+  "Charles Darwin": "scientist",
+  "Barack Obama": "president",
+  "Aristotle": "philosopher",
+  "Isaac Newton": "scientist",
+  "Marie Antoinette": "queen",
+  "asdf": "adsf",
+  "asdf": "asdf",
+};
+
+const popculture = {
+  "Ariana Grande": "singer",
+  "Muhammad Ali": "athlete",
+  "Angelina Jolie": "actress",
+};
+
+const quizForm = document.querySelector(".quiz-form");
+const quizResults = document.querySelector(".quiz-results");
+const scoreText = document.querySelector("#score");
+const restartButton = document.querySelector("#restart-quiz");
+let questions;
+
+function startQuiz(event) {
+  event.preventDefault();
+  const quizType = document.querySelector("#quiz-type").value;
+  const numQuestions = parseInt(document.querySelector("#num-questions").value);
+  if (isNaN(numQuestions) || numQuestions < 1 || numQuestions > 10) {
+    alert("Please enter a valid number of questions (1-10).");
+    return;
+  }
+  let questionList;
+  if (quizType === "h") {
+    questionList = Object.keys(historical);
+    questions = historical;
+  } else if (quizType === "p") {
+    questionList = Object.keys(popculture);
+    questions = popculture;
+  } else {
+    alert("Invalid quiz type.");
+    return;
+  }
+  questionList = shuffleArray(questionList).slice(0, numQuestions);
+  let score = 0;
+  questionList.forEach((question) => {
+    const answer = prompt(`Who was ${question}`);
+    if (answer !== null && answer.toLowerCase() === questions[question].toLowerCase()) {
+      score++;
+    }
+  });
+
+  scoreText.textContent = `You answered ${score} out of ${number} questions`}
