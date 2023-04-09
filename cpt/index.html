@@ -4,23 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Page 5 of 5 for ⚘sblog⚘ | ✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩</title>
+<title>CPT | ⚘sblog⚘</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="⚘sblog⚘" />
+<meta property="og:title" content="CPT" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩" />
 <meta property="og:description" content="✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩" />
-<link rel="canonical" href="https://shruthim0.github.io/repository2/page5/" />
-<meta property="og:url" content="https://shruthim0.github.io/repository2/page5/" />
+<link rel="canonical" href="https://shruthim0.github.io/repository2/cpt/" />
+<meta property="og:url" content="https://shruthim0.github.io/repository2/cpt/" />
 <meta property="og:site_name" content="⚘sblog⚘" />
-<meta property="og:image" content="https://shruthim0.github.io/repository2/images/logo.png" />
 <meta property="og:type" content="website" />
-<link rel="prev" href="https://shruthim0.github.io/repository2/page4/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://shruthim0.github.io/repository2/images/logo.png" />
-<meta property="twitter:title" content="⚘sblog⚘" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CPT" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩","headline":"⚘sblog⚘","image":"https://shruthim0.github.io/repository2/images/logo.png","url":"https://shruthim0.github.io/repository2/page5/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩✩","headline":"CPT","url":"https://shruthim0.github.io/repository2/cpt/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/repository2/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://shruthim0.github.io/repository2/feed.xml" title="⚘sblog⚘" /><link rel="shortcut icon" type="image/x-icon" href="/repository2/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,52 +69,120 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><html>
-<body style="background-color:#1d3318;">
-</body>
+        <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      #quiz-form {
+        display: inline-block;
+        text-align: left;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+      <label>
+        Choose your quiz topic:
+        <select id="quiz-type">
+          <option value="h">Historical figures</option>
+          <option value="p">Pop culture</option>
+        </select>
+      </label>
+      <br><br>
+      <label>
+        How many questions do you want to be asked?
+        <input type="number" id="number" min="1" max="10" value="1">
+      </label>
+      <br><br>
+      <input type="submit" value="Start Quiz">
+    </form>
+    <div id="quiz"></div>
+    <script src="quiz.js"></script>
+  </body>
 </html>
 
-<p><img src="/repository2/images/coverpic.png" alt="" title="my logo" /></p>
+<script>
+const historical = {
+  "Barack Obama": "president",
+  "Aristotle": "philosopher",
+  "Thomas Jefferson": "president",
+  "Charles Darwin": "scientist",
+  "Barack Obama": "president",
+  "Aristotle": "philosopher",
+  "Isaac Newton": "scientist",
+  "Marie Antoinette": "queen",
+  "asdf": "adsf",
+  "asdf": "asdf",
+};
 
-<h1 id="posts">Posts</h1>
+const popculture = {
+  "Ariana Grande": "singer",
+  "Muhammad Ali": "athlete",
+  "Angelina Jolie": "actress",
+};
 
+const quizForm = document.querySelector(".quiz-form");
+const quizResults = document.querySelector(".quiz-results");
+const scoreText = document.querySelector("#score");
+const restartButton = document.querySelector("#restart-quiz");
+let questions;
 
+function startQuiz(event) {
+  event.preventDefault();
+  const quizType = document.querySelector("#quiz-type").value;
+  const numQuestions = parseInt(document.querySelector("#num-questions").value);
+  if (isNaN(numQuestions) || numQuestions < 1 || numQuestions > 10) {
+    alert("Please enter a valid number of questions (1-10).");
+    return;
+  }
+  let questionList;
+  if (quizType === "h") {
+    questionList = Object.keys(historical);
+    questions = historical;
+  } else if (quizType === "p") {
+    questionList = Object.keys(popculture);
+    questions = popculture;
+  } else {
+    alert("Invalid quiz type.");
+    return;
+  }
+  questionList = shuffleArray(questionList).slice(0, numQuestions);
+  let score = 0;
+  questionList.forEach((question) => {
+    const answer = prompt(`Who was ${question}`);
+    if (answer !== null && answer.toLowerCase() === questions[question].toLowerCase()) {
+      score++;
+    }
+  });
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/repository2/2022/08/21/firstjupyternotebook.html">
-            Jupyter Notebook- &quot;Hello&quot; with Python
-          </a>
-        </h3>
-        <p class="post-meta-description">Trying out jupyter notebook and python</p>
-          <p class="post-meta">Aug 21, 2022</p>
-      </div>
-  </div></li></ul>
-
-    
-      <div class="pager">
-        <ul class="pagination">
-          <li><a href="/repository2/page4/" class="previous-page">4</a></li>
-          <li><div class="current-page">5</div></li>
-          <li><div class="pager-edge">•</div></li>
-        </ul>
-      </div></div>
+  scoreText.textContent = `You answered ${score} out of ${number} questions`}
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/repository2/"></data>
