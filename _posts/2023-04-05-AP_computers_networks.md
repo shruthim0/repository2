@@ -14,10 +14,10 @@ description: Add Definitions from Unit 4 Computer Systems and Networks
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: Intel(R) Core(TM) i5-8265U CPU @ **1.60GHz**
+- Memory in GB: 6.8/7.5 GB
+- Storage in GB: 237 GB
+- OS: Windows 11
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
 - Input devices: A physical piece of hardware. It will connect to another device, like a computer, to provide input.
