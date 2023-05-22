@@ -61,6 +61,7 @@ science = {
 whoisanswerbank = ["king", "queen", "president", "explorer", "scientist", "author", "politician", "philosopher"]
 useranswers = []
 # create empy list to append user's answers to 
+
 print("---------------------------------- 𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚝𝚘 𝚝𝚛𝚒𝚟𝚒𝚊! ----------------------------------")
 quiz_type = input("Choose your trivia topic! History (h), pop culture (p), science (s), or mix (m) ")
 number = int(input("How many questions would you like to be asked? "))
@@ -88,7 +89,7 @@ else:
     exit()
 
 # loop through quetion set using for loop; number is the value user inputed for the number of questions they wanted to be asked
-def askquestions():
+def askquestions(number, questions, useranswers):
     score = 0      #initialize score as 0
     i = 0          #initialize i as 0
     while i < number:          
@@ -104,7 +105,10 @@ def askquestions():
             print("    The correct answer was" , questions[x], "\n")
         i += 1      #increment by 1
     print(f"\nYou answered {score} questions correctly out of {number}")
-askquestions()
+
+
+
+askquestions(number, questions, useranswers)
 
 
 #Option for user to get a list of their answers
