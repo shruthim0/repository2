@@ -1,121 +1,61 @@
 ---
 layout: base
-permalink: /cpt/
-title: CPT
+permalink: /diceroll/
+title: diceroll
 search_exclude: true
 ---
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Quiz</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-      }
+<head>
+	<title>Dice Roll</title>
+	<style>
+		#dice-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.dice {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			background-color: white;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div id="dice-container">
+		<div class="dice" id="dice1"></div>
+		<div class="dice" id="dice2"></div>
+		<div class="dice" id="dice3"></div>
+		<div class="dice" id="dice4"></div>
+		<div class="dice" id="dice5"></div>
+		<div class="dice" id="dice6"></div>
+	</div>
 
-      #quiz-form {
-        display: inline-block;
-        text-align: left;
-        border: 1px solid black;
-        padding: 10px;
-      }
+	<script>
 
-      h1 {
-        margin-top: 0;
-      }
+function rollDice() {
+	var dice1 = document.getElementById("dice1");
+	var dice2 = document.getElementById("dice2");
+	var dice3 = document.getElementById("dice3");
+	var dice4 = document.getElementById("dice4");
+	var dice5 = document.getElementById("dice5");
+	var dice6 = document.getElementById("dice6");
 
-      input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
+	var diceFaces = ["dice1.png", "dice2.png", "dice3.png", "dice4.png", "dice5.png", "dice6.png"];
 
-      input[type="submit"]:hover {
-        background-color: #3e8e41;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Quiz</h1>
-    <form id="quiz-form">
-      <label>
-        Choose your quiz topic:
-        <select id="quiz-type">
-          <option value="h">Historical figures</option>
-          <option value="p">Pop culture</option>
-        </select>
-      </label>
-      <br><br>
-      <label>
-        How many questions do you want to be asked?
-        <input type="number" id="number" min="1" max="10" value="1">
-      </label>
-      <br><br>
-      <input type="submit" value="Start Quiz">
-    </form>
-    <div id="quiz"></div>
-    <script src="quiz.js"></script>
-  </body>
+	dice1.style.backgroundImage = "url(" + diceFaces[Math.floor(Math.random() * 6)] + ")";
+	dice2.style.backgroundImage = "url(" + diceFaces[Math.floor(Math.random() * 6)] + ")";
+	dice3.style.backgroundImage = "url(" + diceFaces[Math.floor(Math.random() * 6)] + ")";
+	dice4.style.backgroundImage = "url(" + diceFaces[Math.floor(Math.random() * 6)] + ")";
+	dice5.style.backgroundImage = "url(" + diceFaces[Math.floor(Math.random() * 6)] + ")";
+	dice6.style.backgroundImage = "url(" + diceFaces[Math.floor(Math.random() * 6)] + ")";
+}
+
+	</script>
+</body>
 </html>
 
-<script>
-const historical = {
-  "Barack Obama": "president",
-  "Aristotle": "philosopher",
-  "Thomas Jefferson": "president",
-  "Charles Darwin": "scientist",
-  "Barack Obama": "president",
-  "Aristotle": "philosopher",
-  "Isaac Newton": "scientist",
-  "Marie Antoinette": "queen",
-  "asdf": "adsf",
-  "asdf": "asdf",
-};
-
-const popculture = {
-  "Ariana Grande": "singer",
-  "Muhammad Ali": "athlete",
-  "Angelina Jolie": "actress",
-};
-
-const quizForm = document.querySelector(".quiz-form");
-const quizResults = document.querySelector(".quiz-results");
-const scoreText = document.querySelector("#score");
-const restartButton = document.querySelector("#restart-quiz");
-let questions;
-
-function startQuiz(event) {
-  event.preventDefault();
-  const quizType = document.querySelector("#quiz-type").value;
-  const numQuestions = parseInt(document.querySelector("#num-questions").value);
-  if (isNaN(numQuestions) || numQuestions < 1 || numQuestions > 10) {
-    alert("Please enter a valid number of questions (1-10).");
-    return;
-  }
-  let questionList;
-  if (quizType === "h") {
-    questionList = Object.keys(historical);
-    questions = historical;
-  } else if (quizType === "p") {
-    questionList = Object.keys(popculture);
-    questions = popculture;
-  } else {
-    alert("Invalid quiz type.");
-    return;
-  }
-  questionList = shuffleArray(questionList).slice(0, numQuestions);
-  let score = 0;
-  questionList.forEach((question) => {
-    const answer = prompt(`Who was ${question}`);
-    if (answer !== null && answer.toLowerCase() === questions[question].toLowerCase()) {
-      score++;
-    }
-  });
-
-  scoreText.textContent = `You answered ${score} out of ${number} questions`}
+<button onclick="rollDice()">Roll Dice</button>
