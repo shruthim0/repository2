@@ -16,10 +16,8 @@ search_exclude: true
 <table id="flaskTable" class="table" style="width:100%">
     <thead id="flaskHead">
         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>DOB</th>
-            <th>Age</th>
+            <th>School</th>
+            <th>Reviews</th>
         </tr>
     </thead>
     <tbody id="flaskBody"></tbody>
@@ -27,7 +25,7 @@ search_exclude: true
 
 <script>
   $(document).ready(function() {
-    fetch('https://flask.nighthawkcodingsociety.com/api/users/', { mode: 'cors' })
+    fetch('http://172.27.138.205:8086/api/reviews/', { mode: 'cors' })
     .then(response => {
       if (!response.ok) {
         throw new Error('API response failed');
@@ -38,10 +36,8 @@ search_exclude: true
       for (const row of data) {
         // BUG warning/resolution - DataTable requires row to be single append
         $('#flaskBody').append('<tr><td>' + 
-            row.id + '</td><td>' + 
-            row.name + '</td><td>' + 
-            row.dob + '</td><td>' + 
-            row.age + '</td></tr>');
+            row.school + '</td><td>' + 
+            row.review + '</td><td>' );
       }
       // BUG warning - Jupyter does not show Datatable controls, works on deployed GitHub pages
       $("#flaskTable").DataTable();
