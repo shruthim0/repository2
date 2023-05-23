@@ -781,21 +781,10 @@
   
 
   
-  
-
-  
 
   
   
 
-  
-
-  
-
-  
-  
-
-  
   
 
   
@@ -806,14 +795,27 @@
   
 
   
-
   
 
   
   
 
   
-      ,"page19": {
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+      ,"page20": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://shruthim0.github.io/repository2/robots.txt",
